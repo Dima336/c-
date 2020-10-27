@@ -1,0 +1,102 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace laba_7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n, m, c;
+            Console.WriteLine("Введите размер числа");
+            n = int.Parse(Console.ReadLine());
+            int[] a;
+            a = new int[n];
+            for (int i = 0; i < n; ++i)
+            {
+                Console.Write("елемент числа№" + (i + 1));
+                a[i] = int.Parse(Console.ReadLine());
+            }
+            Console.WriteLine("Число задом наперед");
+            for (int i = n - 1; i >= 0; i--)
+            {
+                Console.WriteLine(a[i]);
+            }
+            Console.WriteLine("Введить размер");
+            m = int.Parse(Console.ReadLine());
+            char[] b;
+            b = new char[m];
+            for (int i = 0; i < m; ++i)
+            {
+                Console.WriteLine("n[" + i + "] = ");
+                b[i] = char.Parse(Console.ReadLine());
+            }
+            for (int i = m - 1; i >= 0; --i)
+            {
+                Console.Write(b[i] + " ");
+            }
+            Console.WriteLine("Введите дробь");
+            c = int.Parse(Console.ReadLine());
+            char[] t;
+            t = new char[c];
+            for (int i = 0; i < c; ++i)
+            {
+                Console.WriteLine("n[" + i + "] = ");
+                t[i] = char.Parse(Console.ReadLine());
+            }
+            for (int i = c - 1; i >= 0; --i)
+            {
+                Console.Write(t[i] + " ");
+            }
+            Console.ReadLine();
+
+            Console.Write("\n Введите строку для переворота: ");
+            string magString = Console.ReadLine();
+            Console.Write("Какой символ разделит вашу строку: ");
+            char sign = Convert.ToChar(Console.ReadLine());
+            Console.WriteLine(sign);
+
+
+            if (magString.IndexOf(sign) != -1)
+            {
+                string[] splitedStr = magString.Split(sign);
+
+                Console.Write("Ваша обратная строка: ");
+                for (int j = splitedStr[0].Length - 1; j >= 0; j--)
+                {
+                    Console.Write(splitedStr[0][j]);
+                }
+                Console.Write(sign);
+                for (int j = splitedStr[1].Length - 1; j >= 0; j--)
+                {
+                    Console.Write(splitedStr[1][j]);
+                }
+                Console.WriteLine();
+            }
+            else
+            {
+                Console.WriteLine("В этой строке нет выбранного знака:");
+            }
+            static void razmer(int a, int n)
+            {
+                Console.WriteLine("Введите размер числа");
+                n = int.Parse(Console.ReadLine());
+                int[] a;
+                a = new int[n];
+                for (int i = 0; i < n; ++i)
+                {
+                    Console.Write("елемент числа№" + (i + 1));
+                    a[i] = int.Parse(Console.ReadLine());
+                }
+                Console.WriteLine("Число задом наперед");
+                for (int i = n - 1; i >= 0; i--)
+                {
+                    Console.WriteLine(a[i]);
+                }
+                return
+            }
+            }
+        }
+    }
