@@ -40,7 +40,6 @@ namespace lab_7_dimass
         }
         static void Main(string[] args)
         {
-            Console.WriteLine("Лаб. 6 вар. 4");
             List<int> listInt = new List<int>();
             Console.Write("Введите размер листа: ");
             enterlist(ref listInt);
