@@ -32,8 +32,8 @@ namespace lab_6_WPFVdovinDimaPD22
 
         private readonly string PRESS_OK_MESSAGE = "Нажмите кнопку \"Ок\"!!!";
         private readonly string NOT_PRESS_OK_MESSAGE = "Кнопка \"Ок\" не может быть нажата";
-        private readonly string MESSAGE_BOX_TITLE = "Хитрец";
-        private readonly string MESSAGE_BOX_TEXT = "Ты меня поймал!!!";
+        private readonly string MESSAGE_BOX_TITLE = "Ага";
+        private readonly string MESSAGE_BOX_TEXT = "Поймал!!!";
 
         public MainWindow()
         {
